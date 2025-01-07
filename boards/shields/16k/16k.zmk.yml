@@ -3,7 +3,7 @@ id: 16k
 name: 16k
 type: shield
 url: https://github.com/daniilprohorov/16k-zmk-keyboard
-requires: [nice_nano_v2]
+requires: [pro_micro]
 features:
   - keys
 siblings:
