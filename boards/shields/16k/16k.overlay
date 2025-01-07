@@ -2,6 +2,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,matrix-transform = &default_transform;
     };
 
     kscan0: kscan {
@@ -11,5 +12,11 @@
             = <&gpio1 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
+    };
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        map = <
+        RC(0,0) RC(0,1)
+        >;
     };
 };
