@@ -1,0 +1,11 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_16K_C
+    def_bool $(shields_list_contains,16k_c)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_16K_L
+    def_bool $(shields_list_contains,16k_l)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_16K_R
+    def_bool $(shields_list_contains,16k_r)
