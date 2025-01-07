@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_16K_C
+if SHIELD_K_C
 
 config ZMK_KEYBOARD_NAME
-	default "16k"
+	default "k"
 	
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_16K_C || SHIELD_16K_L || SHIELD_16K_R
+if SHIELD_K_C || SHIELD_K_L || SHIELD_K_R
 
 config ZMK_SPLIT
 	default y
