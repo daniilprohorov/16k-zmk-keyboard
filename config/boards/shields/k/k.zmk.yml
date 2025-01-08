@@ -1,3 +1,4 @@
+
 file_format: "1"
 id: k
 name: k
@@ -6,3 +7,7 @@ url: https://github.com/daniilprohorov/16k-zmk-keyboard
 requires: [pro_micro]
 features:
   - keys
+siblings:
+  - k_c
+  - k_l
+  - k_r
