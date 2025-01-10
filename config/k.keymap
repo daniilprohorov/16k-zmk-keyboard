@@ -4,7 +4,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        _UP {
+        up_layer {
             bindings = <
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp T   &kp O   &kp P
             >;
@@ -12,17 +12,17 @@
 
         default_layer {
             bindings = <
-                &lt _NAV A   &kp S   &lt _UP D   &lt _DOWN F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt _DOWN J  &lt _UP K   &kp L   &kp SEMICOLON
+                &lt nav_layer A   &kp S   &lt up_layer D   &lt down_layer F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt down_layer J  &lt up_layer K   &kp L   &kp SEMICOLON
             >;
         };
 
-        _DOWN {
+        down_layer {
             bindings = <
                 &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp M   &kp COMMA   &kp DOT   &kp SLASH
             >;
         };
 
-        _NAV {
+        nav_layer {
             bindings = <
                 &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
             >;
