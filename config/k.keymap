@@ -28,7 +28,7 @@
 
         nav {
             bindings = <
-                &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
+                &none   &mt LALT S   &mt LALT D   &mt LALT F   &mt LALT G   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
             >;
         };
     };
