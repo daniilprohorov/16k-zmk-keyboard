@@ -4,9 +4,27 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
+        _UP {
             bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp A   &kp B   &kp C   &kp D   &kp E   &kp F   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0
+                &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp T   &kp O   &kp P
+            >;
+        };
+
+        default_layer {
+            bindings = <
+                &lt _NAV A   &kp S   &lt _UP D   &lt _DOWN F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt _DOWN J  &lt _UP K   &kp L   &kp SEMICOLON
+            >;
+        };
+
+        _DOWN {
+            bindings = <
+                &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp M   &kp COMMA   &kp DOT   &kp SLASH
+            >;
+        };
+
+        _NAV {
+            bindings = <
+                &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
             >;
         };
     };
