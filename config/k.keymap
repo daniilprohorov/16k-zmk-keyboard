@@ -1,9 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define _UP 1
-#define _DOWN 2
-#define _NAV 3
+#define UP_L 1
+#define DOWN_L 2
+#define NAV_L 3
 
 / {
     keymap {
@@ -11,7 +11,7 @@
 
         default_layer {
             bindings = <
-                &lt _NAV A   &kp S   &lt _UP D   &lt _DOWN F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt _DOWN J  &lt _UP K   &kp L   &kp SEMICOLON
+                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &kp SEMICOLON
             >;
         };
 
@@ -21,7 +21,7 @@
             >;
         };
 
-        down_layer {
+        DOWN_L_layer {
             bindings = <
                 &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp M   &kp COMMA   &kp DOT   &kp SLASH
             >;
@@ -29,7 +29,7 @@
 
         nav_layer {
             bindings = <
-                &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
+                &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN_L   &kp UP   &kp RIGHT   &none
             >;
         };
     };
