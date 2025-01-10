@@ -1,17 +1,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define UPL 1
-#define DOWNL 2
-#define NAVL 3
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &lt NAVL A   &kp S   &lt UPL D   &lt DOWNL F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt DOWNL J  &lt UPL K   &kp L   &kp SEMICOLON
+                &lt 3 A   &kp S   &lt 1 D   &lt 2 F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt 2 J  &lt 1 K   &kp L   &kp SEMICOLON
             >;
         };
 
