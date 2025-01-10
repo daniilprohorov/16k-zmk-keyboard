@@ -4,15 +4,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        up_layer {
-            bindings = <
-                &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp T   &kp O   &kp P
-            >;
-        };
-
         default_layer {
             bindings = <
                 &lt nav_layer A   &kp S   &lt up_layer D   &lt down_layer F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt down_layer J  &lt up_layer K   &kp L   &kp SEMICOLON
+            >;
+        };
+
+        up_layer {
+            bindings = <
+                &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp T   &kp O   &kp P
             >;
         };
 
