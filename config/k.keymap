@@ -1,12 +1,17 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+
+#define _UP 1
+#define _DOWN 2
+#define _NAV 3
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &lt nav_layer A   &kp S   &lt up_layer D   &lt down_layer F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt down_layer J  &lt up_layer K   &kp L   &kp SEMICOLON
+                &lt _NAV A   &kp S   &lt _UP D   &lt _DOWN F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt _DOWN J  &lt _UP K   &kp L   &kp SEMICOLON
             >;
         };
 
