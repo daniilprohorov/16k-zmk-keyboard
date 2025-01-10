@@ -8,25 +8,25 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             bindings = <
                 &lt 3 A   &kp S   &lt 1 D   &lt 2 F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &kp SPC   &kp CAPS   &kp H   &lt 2 J  &lt 1 K   &kp L   &kp SEMICOLON
             >;
         };
 
-        up_layer {
+        up {
             bindings = <
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp T   &kp O   &kp P
             >;
         };
 
-        down_layer {
+        down {
             bindings = <
                 &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp M   &kp COMMA   &kp DOT   &kp SLASH
             >;
         };
 
-        nav_layer {
+        nav {
             bindings = <
                 &none   &kp LALT(S)   &kp LALT(D)   &kp LALT(F)   &kp LALT(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
             >;
