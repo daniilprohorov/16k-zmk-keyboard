@@ -5,12 +5,29 @@
 &mt { quick_tap_ms = <220>; };
 
 / {
+    behaviors {
+        // ъ
+        td_0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
+        };
+
+        // э
+        td_1: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-                &lt 3 A   &kp S   &lt 1 D   &lt 2 F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt 4 SPC   &kp CAPS   &kp H   &lt 2 J  &lt 1 K   &kp L   &kp SEMICOLON
+                &lt 3 A   &kp S   &lt 1 D   &lt 2 F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt 4 SPC   &kp CAPS   &kp H   &lt 2 J  &lt 1 K   &kp L   &td_1
             >;
         };
 
@@ -22,7 +39,7 @@
 
         down {
             bindings = <
-                &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp M   &kp COMMA   &kp DOT   &kp SLASH
+                &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp td_0   &kp COMMA   &kp DOT   &kp LEFT_BRACKET
             >;
         };
 
@@ -35,6 +52,12 @@
         num {
             bindings = <
                 &kp N4   &kp N3   &kp N2   &kp N1   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9
+            >;
+        };
+
+        sym {
+            bindings = <
+                &none   &none   &none   &none   &none   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
     };
