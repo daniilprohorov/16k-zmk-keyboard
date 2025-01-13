@@ -39,7 +39,7 @@
 
         down {
             bindings = <
-                &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &kp td_0   &kp COMMA   &kp DOT   &kp LEFT_BRACKET
+                &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &td_0   &kp COMMA   &kp DOT   &kp LEFT_BRACKET
             >;
         };
 
