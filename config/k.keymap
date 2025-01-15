@@ -1,8 +1,18 @@
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 &lt { quick_tap_ms = <220>; };
 &mt { quick_tap_ms = <220>; };
+
+#define BASE_EN_L 0
+#define BASE_RU_L 1
+#define UP_L 2
+#define DOWN_L 3
+#define NAV_L 4
+#define NUM_L 5
+#define SYM_EN_L 6
+#define SYM_RU_L 7
 
 / {
     behaviors {
@@ -25,37 +35,49 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        base_en_l {
             bindings = <
-                &lt 3 A   &kp S   &lt 1 D   &lt 2 F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt 4 SPC   &kp CAPS   &kp H   &lt 2 J  &lt 1 K   &kp L   &td_1
+                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &kp CAPS   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
             >;
         };
 
-        up {
+        base_ru_l {
+            bindings = <
+                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &kp CAPS   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
+            >;
+        };
+
+        up_l {
             bindings = <
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &trans   &trans   &trans   &trans   &trans   &trans   &kp Y   &kp U   &kp I   &kp O   &kp P
             >;
         };
 
-        down {
+        down_l {
             bindings = <
                 &kp Z   &kp X   &kp C   &kp V   &kp B   &trans   &trans   &trans   &trans   &trans   &trans   &kp N   &td_0   &kp COMMA   &kp DOT   &kp LEFT_BRACKET
             >;
         };
 
-        nav {
+        nav_l {
             bindings = <
                 &none   &kp LA(S)   &kp LA(D)   &kp LA(F)   &kp LA(G)   &trans   &trans   &trans   &trans   &trans   &trans   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &none
             >;
         };
 
-        num {
+        num_l {
             bindings = <
                 &kp N4   &kp N3   &kp N2   &kp N1   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9
             >;
         };
 
-        sym {
+        sym_en_l {
+            bindings = <
+                &none   &none   &none   &none   &none   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
+            >;
+        };
+
+        sym_ru_l {
             bindings = <
                 &none   &none   &none   &none   &none   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
