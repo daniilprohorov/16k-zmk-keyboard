@@ -28,6 +28,15 @@
                 , <&macro_tap &tog BASE_RU_L>
                 ;
         };
+        en_switch: en_switch {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_tap &kp CAPS>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_tap &kp CAPS>
+                ;
+        };
     };
     behaviors {
         // ъ
@@ -105,7 +114,7 @@
 
         sym_ru_l {
             bindings = <
-                &none   &none   &lt SYM_RU_L_UP &none   &lt SYM_RU_L_DOWN &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &lt SYM_RU_L_DOWN &none   &lt SYM_RU_L_UP &none   &none   &none
+                &kp EQUAL   &en_switch DOLLAR   &lt SYM_RU_L_UP MINUS   &lt SYM_RU_L_DOWN EXCL   &kp PIPE   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &kp DOLLAR   &lt SYM_RU_L_DOWN QUESTION   &lt SYM_RU_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &en_switch SINGLE_QUOTE
             >;
         };
 
