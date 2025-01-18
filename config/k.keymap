@@ -121,13 +121,13 @@
 
         sym_ru_l_up {
             bindings = <
-                &none   &none   &none   &none   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &kp PLUS  &en_switch AT_SIGN  &kp PERCENT  &en_switch CARET  &en_switch PIPE  &trans   &trans   &trans   &trans   &trans   &trans   &en_switch TILDE  &en_switch AMPERSAND  &en_switch LEFT_BRACKET  &en_switch RIGHT_BRACKET   &en_switch GRAVE
             >;
         };
 
         sym_ru_l_down {
             bindings = <
-                &none   &none   &none   &none   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &kp ASTERISK   &en_switch HASH   &kp UNDERSCORE   &kp AMPERSAND   &kp BACKSLASH   &trans   &trans   &trans   &trans   &trans   &trans   &kp CARET   &kp SLASH   &en_switch LEFT_BRACE  &en_switch RIGHT_BRACE   &kp AT_SIGN
             >;
         };
     };
