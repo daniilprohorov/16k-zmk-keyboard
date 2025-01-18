@@ -97,7 +97,7 @@
 
         sym_en_l {
             bindings = <
-                &kp EQUAL   &kp DOLLAR   &lt SYM_EN_L_UP MINUS   &lt SYM_EN_L_DOWN EXCL   &kp SLASH   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &kp SEMICOLON   &lt SYM_EN_L_DOWN COMMA   &lt SYM_EN_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp SINGLE_QUOTE
+                &kp EQUAL   &kp DOLLAR   &lt SYM_EN_L_UP MINUS   &lt SYM_EN_L_DOWN EXCL   &kp SLASH   &trans   &trans   &tog BASE_RU_L   &kp LESS_THAN   &kp GREATER_THAN   &trans   &kp SEMICOLON   &lt SYM_EN_L_DOWN COMMA   &lt SYM_EN_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp SINGLE_QUOTE
             >;
         };
 
@@ -115,7 +115,7 @@
 
         sym_ru_l {
             bindings = <
-                &kp EQUAL   &en_switch DOLLAR   &lt SYM_RU_L_UP MINUS   &lt SYM_RU_L_DOWN EXCL   &kp PIPE   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &kp DOLLAR   &lt SYM_RU_L_DOWN QUESTION   &lt SYM_RU_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &en_switch SINGLE_QUOTE
+                &kp EQUAL   &en_switch DOLLAR   &lt SYM_RU_L_UP MINUS   &lt SYM_RU_L_DOWN EXCL   &kp PIPE   &trans   &trans   &tog BASE_RU_L   &en_switch LESS_THAN   &en_switch GREATER_THAN   &trans   &kp DOLLAR   &lt SYM_RU_L_DOWN QUESTION   &lt SYM_RU_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &en_switch SINGLE_QUOTE
             >;
         };
 
