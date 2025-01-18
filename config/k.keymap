@@ -35,7 +35,7 @@
                 = <&macro_tap &kp CAPS>
                 , <&macro_wait_time 100>
                 , <&macro_param_1to1 &kp MACRO_PLACEHOLDER>
-                , <&macro_wait_time 100>
+                , <&macro_wait_time 300>
                 , <&macro_tap &kp CAPS>
                 , <&macro_wait_time 50>
                 ;
