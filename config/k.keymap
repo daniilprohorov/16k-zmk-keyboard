@@ -34,9 +34,9 @@
             bindings
                 = <&macro_tap &kp CAPS>
                 , <&macro_param_1to1 &kp MACRO_PLACEHOLDER>
-                , <&macro_wait_time 200>
+                , <&macro_wait_time 500>
                 , <&macro_tap &kp CAPS>
-                , <&macro_wait_time 200>
+                , <&macro_wait_time 500>
                 ;
         };
     };
