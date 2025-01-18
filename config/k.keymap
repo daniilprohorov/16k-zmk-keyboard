@@ -23,7 +23,7 @@
                 = <&kp CAPS>
                 , <&tog BASE_RU_L>
                 ;
-        }
+        };
     };
     behaviors {
         // ъ
