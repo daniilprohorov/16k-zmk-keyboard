@@ -15,6 +15,16 @@
 #define SYM_RU_L 7
 
 / {
+    macros {
+        lang_swap: lang_swap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_tap &tog BASE_RU_L>
+                ;
+        };
+    };
     behaviors {
         // ъ
         td_0: tap_dance_0 {
@@ -37,13 +47,13 @@
 
         base_en_l {
             bindings = <
-                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &kp CAPS   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
+                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &lt SYM_EN_L DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &lang_swap   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
             >;
         };
 
         base_ru_l {
             bindings = <
-                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &kp DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &kp CAPS   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
+                &lt NAV_L A   &kp S   &lt UP_L D   &lt DOWN_L F   &kp G   &lt SYM_RU_L DEL   &kp BSPC   &mt LCTRL ESC   &mt LSHFT ENTER   &lt NUM_L SPC   &lang_swap   &kp H   &lt DOWN_L J  &lt UP_L K   &kp L   &td_1
             >;
         };
 
@@ -73,13 +83,13 @@
 
         sym_en_l {
             bindings = <
-                &none   &none   &none   &none   &none   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &none   &none   &none   &none   &kp N1   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
 
         sym_ru_l {
             bindings = <
-                &none   &none   &none   &none   &none   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &none   &none   &none   &none   &KP N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
     };
