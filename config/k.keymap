@@ -12,7 +12,11 @@
 #define NAV_L 4
 #define NUM_L 5
 #define SYM_EN_L 6
-#define SYM_RU_L 7
+#define SYM_EN_L_UP 7
+#define SYM_EN_L_DOWN 8
+#define SYM_RU_L 9
+#define SYM_RU_L_UP 10
+#define SYM_RU_L_DOWN 11
 
 / {
     macros {
@@ -83,11 +87,35 @@
 
         sym_en_l {
             bindings = <
+                &none   &none   &lt SYM_EN_L_UP &none   &lt SYM_EN_L_DOWN &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &lt SYM_EN_L_DOWN &none   &lt SYM_EN_L_UP &none   &none   &none
+            >;
+        };
+
+        sym_en_l_up {
+            bindings = <
+                &none   &none   &none   &none   &kp N1   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+            >;
+        };
+
+        sym_en_l_down {
+            bindings = <
                 &none   &none   &none   &none   &kp N1   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
 
         sym_ru_l {
+            bindings = <
+                &none   &none   &lt SYM_RU_L_UP &none   &lt SYM_RU_L_DOWN &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &lt SYM_RU_L_DOWN &none   &lt SYM_RU_L_UP &none   &none   &none
+            >;
+        };
+
+        sym_ru_l_up {
+            bindings = <
+                &none   &none   &none   &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+            >;
+        };
+
+        sym_ru_l_down {
             bindings = <
                 &none   &none   &none   &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
