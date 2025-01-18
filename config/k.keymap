@@ -93,13 +93,13 @@
 
         sym_en_l_up {
             bindings = <
-                &none   &none   &none   &none   &kp N1   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &kp PLUS  &kp AT_SIGN  &kp PERCENT  &kp CARET  &kp PIPE  &trans   &trans   &trans   &trans   &trans   &trans   &kp TILDE  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp GRAVE
             >;
         };
 
         sym_en_l_down {
             bindings = <
-                &none   &none   &none   &none   &kp N1   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &kp ASTERISK   &kp HASH   &kp UNDERSCORE   &kp QUESTION   &kp BACKSLASH   &trans   &trans   &trans   &trans   &trans   &trans   &kp COLON   &kp PERIOD   &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp DOUBLE_QUOTES
             >;
         };
 
@@ -111,13 +111,13 @@
 
         sym_ru_l_up {
             bindings = <
-                &none   &none   &none   &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &none   &none   &none   &none   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
 
         sym_ru_l_down {
             bindings = <
-                &none   &none   &none   &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &none   &none   &none   &none   &kp N0   &trans   &trans   &trans   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
     };
