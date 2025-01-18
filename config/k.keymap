@@ -87,7 +87,7 @@
 
         sym_en_l {
             bindings = <
-                &none   &none   &lt SYM_EN_L_UP &none   &lt SYM_EN_L_DOWN &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &lt SYM_EN_L_DOWN &none   &lt SYM_EN_L_UP &none   &none   &none
+                &kp EQUAL   &kp DOLLAR   &lt SYM_EN_L_UP MINUS   &lt SYM_EN_L_DOWN EXCL   &kp SLASH   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &kp SEMICOLON   &lt SYM_EN_L_DOWN COMMA   &lt SYM_EN_L_UP LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp SINGLE_QUOTE
             >;
         };
 
