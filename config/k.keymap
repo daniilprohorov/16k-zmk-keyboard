@@ -89,7 +89,7 @@
 
         sym_ru_l {
             bindings = <
-                &none   &none   &none   &none   &KP N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
+                &none   &none   &none   &none   &kp N0   &trans   &trans   &tog BASE_RU_L   &trans   &trans   &trans   &none   &none   &none   &none   &none
             >;
         };
     };
