@@ -20,10 +20,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp CAPS>
-                , <&macro_tap &tog BASE_RU_L>
+                = <&kp CAPS>
+                , <&tog BASE_RU_L>
                 ;
-        };
+        }
     };
     behaviors {
         // ъ
